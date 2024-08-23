@@ -47,8 +47,8 @@
                         echo "<td>" . $fila['dni_p2'] . "</td>";
                         echo "<td>" . $fila['dni_p3'] . "</td>";
                         echo "<td>" . $fila['id_materia'] . "</td>";
-                        echo '<td><a href="modificar_mesa.php?codi=' . $fila['id_mesa'] . '"> Modificar </a></td>';
-                        echo '<td><a href="eliminar_mesa.php?codig=' . $fila['id_mesa'] . '"> Eliminar </a></td>';
+                        echo '<td><a href="modificar_mesa.php?codigm=' . $fila['id_mesa'] . '"> Modificar </a></td>';
+                        echo '<td><a href="eliminar_mesa.php?codigm=' . $fila['id_mesa'] . '"> Eliminar </a></td>';
                         echo "</tr>";
                         
                     }
@@ -77,8 +77,8 @@
                         echo '<tr>';
                         echo '<td>' . $fila['dni_p'] . '</td>';
                         echo '<td>' . $fila['Nombre'] . '</td>';
-                        echo '<td><a href="modificar_profesor.php?codi=' . $fila['dni_p'] . '"> Modificar </a></td>';
-                        echo '<td><a href="eliminar_profesor.php?codig=' . $fila['dni_p'] . '"> Eliminar </a></td>';
+                        echo '<td><a href="modificar_profesor.php?codigp=' . $fila['dni_p'] . '"> Modificar </a></td>';
+                        echo '<td><a href="eliminar_profesor.php?codigp=' . $fila['dni_p'] . '"> Eliminar </a></td>';
                         echo '</tr>';
                     }
                 }
