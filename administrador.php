@@ -54,7 +54,7 @@
                     }
                 }
             ?>
-            <a href="añadir_mesa.php"> Añadir Mesa</a>
+            <a href="añadir_mesa.php">Añadir Mesa</a>
         </tbody>
     </table>
     <br>
@@ -83,6 +83,7 @@
                     }
                 }
             ?>
+            <a href="añadir_profesor.php">Añadir Profesor</a>
         </tbody>
     </table>
     </div>
