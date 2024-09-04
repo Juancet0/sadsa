@@ -1,0 +1,19 @@
+.h1_admin{
+    background-color: rgba(137, 43, 226, 0.606);
+    color: aliceblue;
+    padding-left: 5%;
+}
+.contenedor_tabla_datos{
+    display: flex;
+}
+
+.datos_usuario{
+    width: 80vh;
+    height: 50vh;
+    background-color: rgba(152, 112, 190, 0.496);
+}
+.tablas{
+    background-color: rgb(215, 215, 215);
+    width: fit-content;
+
+}
