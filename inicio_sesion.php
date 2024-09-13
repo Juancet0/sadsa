@@ -8,9 +8,9 @@
 <body>
     <form action="funcion_sesion.php" method="post">
         <label for="">DNI</label><br>
-        <input type="number" id="dni" placeholder="Ingrese su DNI" required><br>
+        <input type="number" name="dni" placeholder="Ingrese su DNI" required><br>
         <label for="">Nombre</label><br>
-        <input type="text" id="nombre" placeholder="Ingrese su Nombre" required><br>
+        <input type="text" name="nombre" placeholder="Ingrese su Nombre" required><br>
         <input type="submit" value="Iniciar Sesion">
     </form>
 </body>
