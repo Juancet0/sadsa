@@ -1,6 +1,6 @@
 <?php
 include "conexion.php";
-if(!isset($_POST['dni']) & !isset($_POST['nombre']) & !isset($_POST['correo'])){
+if(!isset($_POST['dniR']) & !isset($_POST['nombreR'])){
     die ("Datos incompletos");
 }
 $dni = mysqli_real_escape_string($conectar, $_POST['dniR']);
