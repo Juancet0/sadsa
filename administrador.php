@@ -35,7 +35,7 @@
             <?php
                 include "conexion.php";
                 $sql = "SELECT * FROM mesa";
-                $datos = mysqli_query($conectar, $sql);
+                $datos = mysqli_query($conn, $sql);
                 $resultado = mysqli_num_rows($datos);
                 if($resultado > 0){
                     while ($fila = mysqli_fetch_assoc($datos)){
@@ -70,7 +70,7 @@
         <?php
                 include "conexion.php";
                 $sql = "SELECT * FROM profesor";
-                $datos = mysqli_query($conectar, $sql);
+                $datos = mysqli_query($conn, $sql);
                 $registros = mysqli_num_rows($datos);
                 if($registros > 0){
                     while ($fila = mysqli_fetch_assoc($datos)){
