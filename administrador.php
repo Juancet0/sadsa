@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,17 +7,15 @@ session_start();
     <title>Admin</title>
 </head>
 <body>
-    <h1 class="h1_admin">Bienvenido "<?php echo $_SESSION['nombre_usuario']; ?>"</h1>
+    <h1 class="h1_admin">Bienvenido ""</h1>
     <div class="contenedor_tabla_datos">
     <div class="datos_usuario">
-    <?php
+        <?php
         include "conexion.php";
-        if (isset($_SESSION['dni_u'])) {
-            echo "DNI: " . htmlspecialchars($_SESSION['dni_u']);
-        } else {
-            echo "DNI no disponible.";
-        }
+        $dni = $_POST[''];
+        $sql = "SELECT dni_u, nombre_usuario FROM usuario WHERE dni_u = $dni";
         ?>
+        
     </div>
     <br>
     <div class="tablas">
@@ -88,9 +83,9 @@ session_start();
                     }
                 }
             ?>
+            <a href="añadir_profesor.php">Añadir Profesor</a>
         </tbody>
     </table>
-    <a href="añadir_profesor.php">Añadir Profesor</a>
     </div>
     </div>
 </body>

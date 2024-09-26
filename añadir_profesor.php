@@ -36,7 +36,7 @@
                 echo "<script> alert('No se añadió el registro.'); </script>";
             }
             mysqli_stmt_close($stmt);
-            mysqli_close($conectar);
+            mysqli_close($conn);
         } else {
             echo "<script> alert('Por favor, complete todos los campos.'); </script>";
         }

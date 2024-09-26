@@ -3,11 +3,11 @@
 $host = "localhost";
 $User = "root";
 $pass = "";
-$db = "colegio";
+$db = "colegio2";
 
-$conectar = mysqli_connect($host, $User, $pass, $db);
+$conn = mysqli_connect($host, $User, $pass, $db);
 
-if(!$conectar){
+if(!$conn){
     echo "Fallo de conexion con la base de datos";
     exit;
 }

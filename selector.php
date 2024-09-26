@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estiloindex.css">
+    <link rel="stylesheet" href="estiloselector.css">
     <title>Previas</title>
     <div class="barranav">
         <div class="imgbar">
@@ -16,26 +16,18 @@
         <h3>Inscripcion de Previas</h3> 
     </div>
     <div class="botobar">
-        <button><a href="inicio_sesion.php">Iniciar sesion</a></button>
-        <button><a href="registrarse.php">Registrarse</a></button>
+        <button><a href="index.html">Volver</a></button>
     </div>
-        </div>
 </head>
 <body>
 <div class="fondo">
     <img src="fondo.jpg" alt="">
 </div>
-<div class="imgpa">
-    <img src="epe.png" alt="">
+ <!-- Nuevo contenido -->
+<div class="titulose">
+    <h1>Seleccione su tipo de usuario</h1>
 </div>
-    <div class="titulot">
-        <h1>Bienvenido a a pagina oficial de la EPET N°34 para Inscripcion de previas</h1>
+<div class="botonse">
+    <button><a href="selectora.php">Alumno</a></button>
+    <button><a href="iniciarsesion.html">profesor</a></button>
 </div>
-<div class="texin">
-    <h2>Para acceder a las previas que necesita inscribirse, haga clck en el boton de arriba a la izquierda llamado "iniciar sesion".
-        Si no posee una cuenta para verificar sus previas, haga click en el boton de "Registrarse" para crear una cuenta.
-    </h2>
-</div>
-    
-</body>
-</html>
