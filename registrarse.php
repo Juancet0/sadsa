@@ -12,6 +12,8 @@
     <input type="number" name="dniR" placeholder="Ingrese su DNI"><br>
     <label for="nombre">Usuario</label><br>
     <input type="text" name="nombreR" placeholder="Ingrese su Nombre de Usuario"><br>
+    <label for="codCurso">Curso</label><br>
+    <input type="number" name="codCurso" placeholder="N° de Curso"><br>
     <input type="submit" value="Registrarse">
     </form>
 </body>

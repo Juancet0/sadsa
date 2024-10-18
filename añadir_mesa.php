@@ -8,7 +8,7 @@
 <body>
     <form action="" method="post">
         <label for="idmesa">Id Mesa</label><br>
-        <input type="number" name="dni" id="dni" placeholder="Ingrese el Id de la mesa" required><br>
+        <input type="number" name="id_mesa" id="id_mesa" placeholder="Ingrese el Id de la mesa" required><br>
         <label for="fechamesa">Fecha</label><br>
         <input type="date" name="fechamesa" id="fechamesa" placeholder="Fecha de la mesa" required><br>
         <label for="hora">Hora</label><br>
@@ -26,7 +26,7 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        if (isset($_POST['dni']) && isset($_POST['nombre_p'])) {
+        if (isset($_POST['id_mesa']) && isset($_POST['fechamesa']) && isset($_POST['fechamesa']) && isset($_POST['fechamesa']) && isset($_POST['fechamesa']) && isset($_POST['fechamesa']) && isset($_POST['fechamesa'])) {
             $dni = trim($_POST['dni']);
             $nombre = trim($_POST['nombre_p']);
             if (!is_numeric($dni)) {
@@ -38,8 +38,8 @@
             $dni = mysqli_real_escape_string($conectar, $dni);
             $nombre = mysqli_real_escape_string($conectar, $nombre);
 
-            $stmt = mysqli_prepare($conectar, "INSERT INTO profesor (dni_p, Nombre) VALUES (?, ?)");
-            mysqli_stmt_bind_param($stmt, "ss", $dni, $nombre);
+            $stmt = mysqli_prepare($conectar, "INSERT INTO mesa (id_mesa, fecha, hora, dni_p1, dni_p2, dni_p3, id_materia) VALUES (?, ?, ?, ?, ?, ?, ?)");
+            mysqli_stmt_bind_param($stmt, "iiiiiii", $dni, $nombre);
             if (mysqli_stmt_execute($stmt)) {
                 echo "<script> alert('Se añadió el registro correctamente.'); window.location.href='administrador.php'; </script>";
             } else {

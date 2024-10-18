@@ -12,7 +12,7 @@ mysqli_stmt_execute($stmt);
 $resul = mysqli_stmt_get_result($stmt);
 
 if (mysqli_num_rows($resul) > 0) {
-    $fila = mysqli_fetch_array($result);
+    $fila = mysqli_fetch_array($resul);
     $tusuario = $fila['tipo_usuario'];
     $usuario = $fila['dni_u'];
     
@@ -23,8 +23,11 @@ if (mysqli_num_rows($resul) > 0) {
     if ( $tusuario ==1){ 
         echo "<script>alert('Se ha iniciado sesion correctamente'); window.location = 'calificacion.php'; </script>";
      } else if($tusuario == 0){
-        echo "<script>alert('Se ha iniciado sesion correctamente'); window.location = 'calificacion.php'; </script>";
+        echo "<script>alert('Se ha iniciado sesion correctamente'); window.location = 'administrador.php'; </script>";
     }
+        else if($tusuario == 2){
+            echo "<script>alert('se ha iniciado sesion correctamente'); window.location = vista_profesor.php; </script>";
+        }
 
 }else {
     echo "<script>alert('ERROR: No se ha iniciado sesion correctamente♥');history.go(-1);</script>";

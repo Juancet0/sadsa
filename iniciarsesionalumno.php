@@ -6,8 +6,8 @@ include('conexion.php');
 
 // Verificar si el formulario ha sido enviado
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $dni_u = mysqli_real_scape_string($_POST['dni_u']);
-    $nombre_usuario = mysqli_real_scape_string($_POST['nombre_usuario']);
+    $dni_u = mysqli_real_escape_string(mysql: $_POST['dni_u']);
+    $nombre_usuario = mysqli_real_escape_string(mysql: $_POST['nombre_usuario']);
 
     // Consulta para verificar si el usuario existe
     $sql =  "SELECT * FROM usuario WHERE dni_u = ? AND nombre_usuario = ?";
